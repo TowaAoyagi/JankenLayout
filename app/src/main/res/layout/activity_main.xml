@@ -14,15 +14,15 @@
 
         <ImageView
             android:id="@+id/player"
-            android:layout_width="400px"
-            android:layout_height="400px"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
             android:layout_gravity="center_horizontal"
             app:srcCompat="@drawable/goo" />
 
         <ImageView
             android:id="@+id/cpu"
-            android:layout_width="400px"
-            android:layout_height="400px"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
             android:layout_gravity="center_horizontal"
             app:srcCompat="@drawable/choki" />
 
@@ -41,25 +41,31 @@
 
             <ImageButton
                 android:id="@+id/goo"
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_margin="8dp"
                 android:layout_weight="1"
+                android:adjustViewBounds="false"
                 android:onClick="goo"
                 app:srcCompat="@drawable/goo" />
 
             <ImageButton
                 android:id="@+id/choki"
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_margin="8dp"
                 android:layout_weight="1"
+                android:adjustViewBounds="false"
                 android:onClick="choki"
                 app:srcCompat="@drawable/choki" />
 
             <ImageButton
                 android:id="@+id/paa"
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_margin="8dp"
                 android:layout_weight="1"
+                android:adjustViewBounds="false"
                 android:onClick="paa"
                 app:srcCompat="@drawable/paa" />
 

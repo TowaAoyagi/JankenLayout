@@ -3,6 +3,7 @@ package app.aoyagi.makkan.jankenlayout
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import kotlinx.android.synthetic.main.activity_main.*
 import java.util.*
 
@@ -13,7 +14,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
     }
 
-    fun goo() {
+    fun goo(view: View?) {
         player.setImageResource(R.drawable.goo)
 
         when (Random().nextInt(3)) {
@@ -39,7 +40,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    fun choki() {
+    fun choki(view: View?) {
         player.setImageResource(R.drawable.choki)
 
         when (Random().nextInt(3)) {
@@ -63,7 +64,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    fun paa() {
+    fun paa(view: View?) {
         player.setImageResource(R.drawable.paa)
 
         when (Random().nextInt(3)) {
