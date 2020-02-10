@@ -3,7 +3,6 @@ package app.aoyagi.makkan.jankenlayout
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import kotlinx.android.synthetic.main.activity_main.*
 import java.util.*
 
@@ -13,10 +12,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
     }
-    fun goo(view: View?){
+
+    fun goo() {
         player.setImageResource(R.drawable.goo)
 
-        when (Random().nextInt(3)){
+        when (Random().nextInt(3)) {
             0 -> {
                 cpu.setImageResource(R.drawable.goo)
                 result.text = "引き分けです"
@@ -38,10 +38,11 @@ class MainActivity : AppCompatActivity() {
             }
         }
     }
-    fun choki(view: View?){
+
+    fun choki() {
         player.setImageResource(R.drawable.choki)
 
-        when (Random().nextInt(3)){
+        when (Random().nextInt(3)) {
             0 -> {
                 cpu.setImageResource(R.drawable.choki)
                 result.text = "引き分けです"
@@ -61,10 +62,11 @@ class MainActivity : AppCompatActivity() {
             }
         }
     }
-    fun paa(view: View?){
+
+    fun paa() {
         player.setImageResource(R.drawable.paa)
 
-        when (Random().nextInt(3)){
+        when (Random().nextInt(3)) {
             0 -> {
                 cpu.setImageResource(R.drawable.paa)
                 result.text = "引き分けです"
