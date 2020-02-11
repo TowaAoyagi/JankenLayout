@@ -41,33 +41,35 @@
 
             <ImageButton
                 android:id="@+id/goo"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:layout_weight="1"
-                android:adjustViewBounds="false"
+                android:background="@drawable/goo"
                 android:onClick="goo"
-                app:srcCompat="@drawable/goo" />
+                android:scaleType="centerCrop" />
 
             <ImageButton
                 android:id="@+id/choki"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:layout_weight="1"
                 android:adjustViewBounds="false"
                 android:onClick="choki"
-                app:srcCompat="@drawable/choki" />
+                android:scaleType="centerCrop"
+                android:background="@drawable/choki" />
 
             <ImageButton
                 android:id="@+id/paa"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:layout_weight="1"
                 android:adjustViewBounds="false"
                 android:onClick="paa"
-                app:srcCompat="@drawable/paa" />
+                android:scaleType="centerCrop"
+                android:background="@drawable/paa" />
 
         </LinearLayout>
     </LinearLayout>
